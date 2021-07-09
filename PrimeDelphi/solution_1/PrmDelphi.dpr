@@ -66,6 +66,7 @@ end;
 destructor TPrimeSieve.Destroy;
 begin
   AtomicIncrement(passes);
+  FBitArray := nil;
   inherited;
 end;
 
